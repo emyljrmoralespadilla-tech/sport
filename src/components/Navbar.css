@@ -1,0 +1,123 @@
+/* Contenedor principal de la barra */
+.navbar-container {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/* SportStore (lado izquierdo) */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+/* Lado derecho */
+.navbar-right {
+    color:aquamarine;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Botón Carrito */
+.cart-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    color: black;
+    transition: all 0.3s;
+}
+
+.cart-link:hover .cart-icon {
+    color: #2563eb;
+    transform: scale(1.1);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Botón principal del dropdown */
+.dropbtn {
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.dropbtn:hover {
+    background: #f4f4f4;
+}
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    min-width: 180px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Items del dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+/* Hover del dropdown */
+.dropdown-content a:hover {
+    background: #f2f2f2;
+}
+
+/* Mostrar dropdown cuando el mouse lo toca */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

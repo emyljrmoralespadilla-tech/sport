@@ -1,0 +1,17 @@
+export default function Footer() {
+  return (
+    <footer style={styles.footer}>
+      <p>© 2025 SportStore </p>
+    </footer>
+  );
+}
+
+const styles = {
+  footer: {
+    marginTop: "40px",
+    padding: "20px",
+    background: "#111",
+    color: "#fff",
+    textAlign: "center"
+  }
+};
